@@ -14,54 +14,36 @@
 		<div id="current-player"></div>
 	</header>
 	<main>
-		<div class="info-box">
+		<div class="info-box" id="test">
 			<h2>Choose your marker:</h2>
 			<div class="radio-container">
 				<div class="radio">
-				  <label><input type="radio" name="optradio" class="select-marker" id="select-x">X</label>
+				  <label><input type="radio" name="optradio" class="select-marker" id="select-x" checked>X</label>
 				</div>
 				<div class="radio">
 				  <label><input type="radio" name="optradio" class="select-marker" id="select-o">O</label>
 				</div>
 			</div>
 			<div class="submit-btn">
-				<input type="submit" placeholder="Choose" />
+				<input type="submit" value="Choose" />
 			</div>
 			<p id="msg"></p>
 		</div>
 		<div class="game-board">
 			<div class="row" id="top-row">
-				<div class="box" id="top-l">
-					<div class="game-space"></div>
-				</div>
-				<div class="box" id="top-m">
-					<div class="game-space"></div>
-				</div>
-				<div class="box" id="top-r">
-					<div class="game-space"></div>
-				</div>
+				<div class="box" id="top-l"></div>
+				<div class="box" id="top-m"></div>
+				<div class="box" id="top-r"></div>
 			</div>
 			<div class="row" id="mid-row">
-				<div class="box" id="mid-l">
-					<div class="game-space"></div>
-				</div>
-				<div class="box" id="mid-m">
-					<div class="game-space"></div>
-				</div>
-				<div class="box" id="mid-r">
-					<div class="game-space"></div>
-				</div>
+				<div class="box" id="mid-l"></div>
+				<div class="box" id="mid-m"></div>
+				<div class="box" id="mid-r"></div>
 			</div>
 			<div class="row" id="bot-row">
-				<div class="box" id="bot-l">
-					<div class="game-space"></div>
-				</div>
-				<div class="box" id="bot-m">
-					<div class="game-space"></div>
-				</div>
-				<div class="box" id="bot-r">
-					<div class="game-space"></div>
-				</div>
+				<div class="box" id="bot-l"></div>
+				<div class="box" id="bot-m"></div>
+				<div class="box" id="bot-r"></div>
 			</div>
 		</div>
 	</main>

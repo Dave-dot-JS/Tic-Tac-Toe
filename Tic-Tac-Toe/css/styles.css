@@ -41,6 +41,7 @@ header {
 	font-family: arial;
 	font-weight: bold;
 	letter-spacing: 0;
+	transition: 0.5s all;
 
 }
 
@@ -88,6 +89,7 @@ header {
 	.submit-btn input:hover {
 		background: #ff4fff;
 		border: 2px solid #ff2fff;
+		cursor: pointer;
 	}
 
 	.submit-btn input:active {
@@ -127,11 +129,7 @@ header {
 
 .box {
 	flex: 1 0 33.333333%;
-}
-
-.game-space {
-	transition: all 0.5s 0.01s;
-	border-radius: 20px;
+	transition: background 0.5s 0.01s;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -142,8 +140,13 @@ header {
 	line-height: 0.7em;
 }
 
-	.game-space:hover {
+	.box:hover {
 		background: #abf;
+	}
+
+	.box span {
+		display: inline-block;
+		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
 
 #top-l,
@@ -204,9 +207,8 @@ header {
 	transform: translateY(0px) !important;
 }
 
-.danger {
-	border-color: #f00;
-	color: #A00;
+.hide {
+	transform: scale(0);
 }
 
 /*****************RESPONSIVE STYLES*****************/
@@ -220,7 +222,7 @@ header {
 		height: 70vh;
 	}
 
-	.game-space {
+	.box {
 		font-size: 12em;
 		line-height: 0.8em;
 	}
