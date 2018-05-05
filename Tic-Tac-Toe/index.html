@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Tic-Tac-Toe</title>
+</head>
+<body>
+	<header class="banner">
+		<h1>Tic<span>Tac</span>Toe</h1>
+		<div id="current-player"></div>
+	</header>
+	<main>
+		<div class="info-box">
+			<h2>Choose your marker:</h2>
+			<div class="radio-container">
+				<div class="radio">
+				  <label><input type="radio" name="optradio" class="select-marker" id="select-x">X</label>
+				</div>
+				<div class="radio">
+				  <label><input type="radio" name="optradio" class="select-marker" id="select-o">O</label>
+				</div>
+			</div>
+			<div class="submit-btn">
+				<input type="submit" placeholder="Choose" />
+			</div>
+			<p id="msg"></p>
+		</div>
+		<div class="game-board">
+			<div class="row" id="top-row">
+				<div class="box" id="top-l">
+					<div class="game-space"></div>
+				</div>
+				<div class="box" id="top-m">
+					<div class="game-space"></div>
+				</div>
+				<div class="box" id="top-r">
+					<div class="game-space"></div>
+				</div>
+			</div>
+			<div class="row" id="mid-row">
+				<div class="box" id="mid-l">
+					<div class="game-space"></div>
+				</div>
+				<div class="box" id="mid-m">
+					<div class="game-space"></div>
+				</div>
+				<div class="box" id="mid-r">
+					<div class="game-space"></div>
+				</div>
+			</div>
+			<div class="row" id="bot-row">
+				<div class="box" id="bot-l">
+					<div class="game-space"></div>
+				</div>
+				<div class="box" id="bot-m">
+					<div class="game-space"></div>
+				</div>
+				<div class="box" id="bot-r">
+					<div class="game-space"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; Dave Skrtich 2018</p>
+		<div class="socials">
+			<a href="https://github.com/Grixxs"><img src="css/img/github-ico.png" alt="github" /></a>
+			<a href="https://www.linkedin.com/in/david-skrtich-84511b49/"><img src="css/img/li-ico.png" alt="linkedin" /></a>
+			<a href="https://twitter.com/djsgrixs"><img src="css/img/twit-ico.png" alt="twitter" /></a>
+		</div>
+	</footer>
+	<script src="js/app.js"></script>
+</body>
+</html>
