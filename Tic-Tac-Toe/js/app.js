@@ -142,8 +142,8 @@ function declareVictory(curr) {
 	player.style.opacity = 0;
 	infoBox.innerHTML = `
 	<h1>${curr} WINS!</h1>
-	<div class="submit-btn" id="replay">
-		<input type="submit" value="Play Again" />
+	<div class="submit-btn">
+		<input type="submit" value="Play Again" id="replay" />
 	</div>
 	`
 	showInfo();
@@ -155,9 +155,9 @@ function declareVictory(curr) {
 
 function declareDraw() {
 	infoBox.innerHTML = `
-	<h1>THE GAME IS A DRAW</h1>
-	<div class="submit-btn" id="replay">
-		<input type="submit" value="Play Again" />
+	<h1>It's a draw!</h1>
+	<div class="submit-btn">
+		<input type="submit" value="Play Again"  id="replay"/>
 	</div>
 	`
 	showInfo();

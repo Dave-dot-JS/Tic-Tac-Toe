@@ -30,9 +30,9 @@ header {
 	}
 
 #current-player {
-	margin: 0 auto;
-	width: 25%;
-	height: 2em;
+	margin: -20px auto 0 auto;
+	width: 50%;
+	padding: 0.2em;
 	line-height: 2em;
 	font-size: 0.5em;
 	background: #0af;
@@ -42,32 +42,36 @@ header {
 	font-weight: bold;
 	letter-spacing: 0;
 	transition: 0.5s all;
-
 }
 
 /*****************INFO BOX STYLES*****************/
 .info-box {
 	text-align: center;
+	padding: 0.2em;
 	font-family: 'Shadows into light', cursive;
-	font-size: 1.5em;
+	font-size: 1em;
 	letter-spacing: 0.1em;
 	color: #eee;
 	text-shadow: 0.02em 0.02em #444;
 	background: #0af;
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 	border: 2px solid #eee;
-	border-radius: 50px;
+	border-radius: 20px;
 	transition: all 0.25s;
 	transform: translateY(-50%);
 	z-index: 100;
 	display: none;
 	position: absolute;
-	top: 0;
-	left: 25%;
+	top: -15%;
+	left: 20%;
 	transition: all 0.5s;
 	opacity: 0;
 }
+
+	.info-box h2 {
+		font-size: 1.2em;
+	}
 
 	.info-box input {
 		margin-right: 7px;
@@ -79,11 +83,12 @@ header {
 
 	.submit-btn input {
 		padding: 0.5em;
-		width: 25%;
+		width: 35%;
 		border-radius: 7px;
 		background: #ff6fff;
 		border: 2px solid #ff6fff;
 		color: #eee;
+		font-size: 0.7em;
 	}
 
 	.submit-btn input:hover {
@@ -104,6 +109,9 @@ header {
 	margin-bottom: 5px;
 }
 
+#replay {
+	width: 45%;
+}
 /*****************GAME BOARD STYLES*****************/
 .game-board {
 	margin: 1.5em auto;
@@ -137,7 +145,7 @@ header {
 	text-align: center;
 	font-family: 'Gamja Flower', cursive;
 	font-size: 8em;
-	line-height: 0.7em;
+	line-height: 0.6em;
 }
 
 	.box:hover {
@@ -173,7 +181,6 @@ header {
  	font-family: 'Shadows into light', cursive;
  	height: 40px;
  	color: #eee;
- 	font-size: 1.5em;
  	font-weight: bold;
  }
 
@@ -181,6 +188,7 @@ header {
  		line-height: 40px;
  		float: left;
  		margin-left: 10px;
+ 		font-size: 1.2em;
  	}
 
 .socials {
@@ -188,7 +196,7 @@ header {
 	position: absolute;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 	.socials img {
@@ -212,18 +220,41 @@ header {
 }
 
 /*****************RESPONSIVE STYLES*****************/
+
+/* Tablet */
 @media screen and (min-width: 640px) {
 	header {
 		font-size: 2.5em;
 	}
 
+	#current-player {
+		width: 250px;
+	}
+
+	.info-box {
+		font-size: 1.5em;
+	}
+
 	.game-board {
-		width: 70vh;
-		height: 70vh;
+		width: 65vh;
+		height: 65vh;
 	}
 
 	.box {
 		font-size: 12em;
-		line-height: 0.8em;
+		line-height: 0.68em;
+	}
+
+	.socials {
+		justify-content: center;
+	}
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+	.info-box {
+		font-size: 1.7em;
+		width: 40%;
+		left: 30%;
 	}
 }
