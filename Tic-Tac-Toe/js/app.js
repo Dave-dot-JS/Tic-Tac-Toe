@@ -83,7 +83,7 @@ function startGame() {
 }
 
 function chooseSpace() {
-	this.innerHTML = `<span class='hide'>${currentPlayer}</span>`;
+	this.innerHTML = `<div class='hide'>${currentPlayer}</div>`;
 	setTimeout(() => this.firstChild.classList.remove('hide'));
 	this.removeEventListener('click', chooseSpace);
 	if (currentPlayer === userMarker) {
